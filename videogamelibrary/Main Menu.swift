@@ -10,13 +10,15 @@ import Foundation
 
 //main menu below
 func mainMenu(){
-    print("to add a game, type 'add'")
+    print("""
+    to add a game, type 'add')
     
-    print("to remove a game, type 'remove' ")
+    to remove a game, type 'remove' )
     
-    print("to check a game in, type 'check in'")
+    print("to check a game in, type 'check in')
     
-    print("to check a game out, type 'check out'")
+    print("to check a game out, type 'check out'
+""")
     
     let userInput = readLine()!
     
