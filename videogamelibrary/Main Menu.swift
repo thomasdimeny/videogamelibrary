@@ -10,37 +10,30 @@ import Foundation
 
 //main menu below
 func mainMenu(){
-    print("to add a game, type ag")
+    print("to add a game, type 'add'")
     
-    print("to remove a game, type rg")
+    print("to remove a game, type 'remove' ")
     
-    print("to check a game in, type cgi")
+    print("to check a game in, type 'check in'")
     
-    print("to check a game out, type cgo")
+    print("to check a game out, type 'check out'")
     
     let userInput = readLine()!
     
-    if userInput == "ag"{
+    if userInput == "add"{
         addGame()
         
-    } else if userInput == "rg" {
+    } else if userInput == "remove" {
         removeGame()
         
-    } else if userInput == "cgi"{
+    } else if userInput == "check in"{
         checkIn()
-    } else if userInput == "cgo"{
+    } else if userInput == "check out"{
         checkOut()
     } else {
         mainMenu()
     }
-//if statement for addGame
-    
-   
-        //if statement for removeGame
-    
-    
-//if statement for check game in
-    
+
     
 }
 
