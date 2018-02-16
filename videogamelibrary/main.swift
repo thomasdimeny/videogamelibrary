@@ -34,6 +34,19 @@ import Foundation
  1. Self Explanatory
  
  */
+let currentDate = Date()
+
+let calendar = Calendar.current
+
+let twoWeeksFromNow = calendar.date(byAdding: .day, value: 14, to: currentDate)
+
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "MM/dd/yyyy hh:mm"
+
+
+//print(twoWeeksFromNow!)
+
+
 
 print("""
 Welcome to the video game library!
