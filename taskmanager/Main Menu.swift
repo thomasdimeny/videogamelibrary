@@ -31,11 +31,16 @@ import Foundation
 //main menu below
 func mainMenu(){
     print("""
+   
     to add a task, type 'add'
     
     to remove a task, type 'remove'
     
     to view a task, type 'view'
+
+    to view an uncompleted task, type 'incomplete'
+    
+    to view a complete task, type 'complete'
     
     
 """)
@@ -46,12 +51,18 @@ func mainMenu(){
         addTask()
         
     } else if userInput == "remove" {
-        //removeTask()
+        removeTask()
         
     } else if userInput == "view"{
-       //viewTawk()
+       viewTasks()
         
+    } else if userInput == "complete"{
+        completeTasks()
+   
+    } else if userInput == "incomplete"{
+        incompleteTasks()
     }
+        
         else {
         mainMenu()
     }

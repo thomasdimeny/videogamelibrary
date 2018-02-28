@@ -27,14 +27,6 @@ Would you like to quit the program? type yes or no
 }
 
 
-func userDate() {
-    print("in how many days would you like this task to be due? "
-    let calendar = Calendar.current
-    
-    
-    
-    
-}
 
 
 
@@ -77,34 +69,54 @@ func removeTask() {
 }
 
 
-/*func viewTasks(){
+func viewTasks(){
+    print("Here are your tasks, completed and uncompleted:")
     for (n, c) in taskLibrary.enumerated() {
-        /*if c.isCompleted == false {
             print("\(n): '\(c.name)'")
         }
-        }*/
+    print("To see a specific task, type the number that goes before it.")
     let userInput = Int(readLine()!)
     if let userInput = userInput {
     if userInput > taskLibrary.count - 1 {
         print("Please put in a valid number")
-        checkIn()
-    } else {
-    taskLibrary[userInput].isCompleted = false
-    quitProgram()
+       viewTasks()
+    }  else {
+        print(taskLibrary[userInput].name)
+        print(taskLibrary[userInput].describe)
+        }
+        print("would you like to mark this task as complete?")
+        let isComplete = readLine()!
+        if isComplete == "yes"{
+            taskLibrary[userInput].complete = true
+            print("this task is now complete")
+        } else {
+            print("this task remains uncomplete.")
+        }
+    }
     mainMenu()
-    }
-    } else {
-        print("Please enter a valid number")
-        checkIn()
-    }
+    quitProgram()
 
 }
-*/
 
 
+func completeTasks() {
+  print("Here are your complete tasks")
+    for (n, c) in taskLibrary.enumerated() {
+        if c.complete == true {
+        print("\(n): '\(c.name)'")
+        }
+    }
+    
+}
 
-
-
+func incompleteTasks() {
+    print("Here are your incomplete tasks")
+    for (n, c) in taskLibrary.enumerated() {
+        if c.complete == false {
+            print("\(n): '\(c.name)'")
+        }
+    }
+}
 
 
 
