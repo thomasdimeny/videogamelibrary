@@ -49,7 +49,7 @@
 		DD5313492033763000685013 = {
 			isa = PBXGroup;
 			children = (
-				DD5313542033763000685013 /* videogamelibrary */,
+				DD5313542033763000685013 /* taskmanager */,
 				DD5313532033763000685013 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,7 +62,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DD5313542033763000685013 /* videogamelibrary */ = {
+		DD5313542033763000685013 /* taskmanager */ = {
 			isa = PBXGroup;
 			children = (
 				DD5313552033763000685013 /* main.swift */,
@@ -71,7 +71,7 @@
 				DD53137320337D1A00685013 /* Library.swift */,
 				DD53137520337D2900685013 /* Game.swift */,
 			);
-			path = videogamelibrary;
+			path = taskmanager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DD53134D2033763000685013 /* Build configuration list for PBXProject "videogamelibrary" */;
+			buildConfigurationList = DD53134D2033763000685013 /* Build configuration list for PBXProject "taskmanager" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -270,7 +270,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD53134D2033763000685013 /* Build configuration list for PBXProject "videogamelibrary" */ = {
+		DD53134D2033763000685013 /* Build configuration list for PBXProject "taskmanager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD5313572033763000685013 /* Debug */,

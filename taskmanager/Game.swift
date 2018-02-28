@@ -8,14 +8,17 @@
 
 import Foundation
 
-class VideoGame {
+class UserTasks {
     var name: String
-    var isGameCheckedOut = false
+    var describe: String
+    var complete = false
     
-    init(name: String){
+    
+    init(name: String, describe: String){
         self.name = name
+        self.describe = describe
+    
     }
-   
+
     
 }
-
