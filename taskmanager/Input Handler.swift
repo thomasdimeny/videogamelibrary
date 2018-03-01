@@ -34,12 +34,21 @@ Would you like to quit the program? type yes or no
 //game manager functions below
 
 func addTask() {
-    print("What task would you like to add? Type the name and the description")
-    let userInput = UserTasks(name: readLine()!, describe: readLine()!)
-    taskLibrary.append(userInput)
-   quitProgram()
-    mainMenu()
-}
+        print("What task would you like to add? ")
+        let taskName = readLine()!
+        print("How many days until it happens?")
+        var taskDate = Int(readLine()!)!
+        print("Add a description")
+        let taskDesc = readLine()!
+        let calendar = Calendar.current
+        let newCal = calendar.date(byAdding: .day, value: taskDate, to: Date())
+        let papTask = UserTasks(name: taskName, describe: taskDesc, date: newCal!)
+        taskLibrary.append(papTask)
+        print("Task added!")
+        
+        mainMenu()
+    }
+
 
 
 
@@ -48,7 +57,7 @@ func removeTask() {
     for (n, c) in taskLibrary.enumerated()
     {
         if c.complete == false {
-            print("\(n): '\(c.name, c.describe)'")
+            print("\(n): '\(c.name, c.describe, c.date)'")
         }
     } 
     let userInput = Int(readLine()!)
@@ -83,6 +92,7 @@ func viewTasks(){
     }  else {
         print(taskLibrary[userInput].name)
         print(taskLibrary[userInput].describe)
+        print(taskLibrary[userInput].date)
         }
         print("would you like to mark this task as complete?")
         let isComplete = readLine()!
@@ -90,7 +100,7 @@ func viewTasks(){
             taskLibrary[userInput].complete = true
             print("this task is now complete")
         } else {
-            print("this task remains uncomplete.")
+            print("this task remains incomplete.")
         }
     }
     mainMenu()
@@ -106,7 +116,7 @@ func completeTasks() {
         print("\(n): '\(c.name)'")
         }
     }
-    
+    mainMenu()
 }
 
 func incompleteTasks() {
@@ -116,6 +126,7 @@ func incompleteTasks() {
             print("\(n): '\(c.name)'")
         }
     }
+    mainMenu()
 }
 
 

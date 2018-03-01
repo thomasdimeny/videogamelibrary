@@ -38,7 +38,7 @@ func mainMenu(){
     
     to view a task, type 'view'
 
-    to view an uncompleted task, type 'incomplete'
+    to view an incompleted task, type 'incomplete'
     
     to view a complete task, type 'complete'
     

@@ -11,7 +11,7 @@
 		DD53137020337CEE00685013 /* Main Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53136F20337CEE00685013 /* Main Menu.swift */; };
 		DD53137220337D0800685013 /* Input Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53137120337D0800685013 /* Input Handler.swift */; };
 		DD53137420337D1A00685013 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53137320337D1A00685013 /* Library.swift */; };
-		DD53137620337D2900685013 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD53137520337D2900685013 /* Game.swift */; };
+		DDEF042720487CC10005099F /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEF042620487CC10005099F /* Tasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +32,7 @@
 		DD53136F20337CEE00685013 /* Main Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Menu.swift"; sourceTree = "<group>"; };
 		DD53137120337D0800685013 /* Input Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Input Handler.swift"; sourceTree = "<group>"; };
 		DD53137320337D1A00685013 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
-		DD53137520337D2900685013 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		DDEF042620487CC10005099F /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 				DD53136F20337CEE00685013 /* Main Menu.swift */,
 				DD53137120337D0800685013 /* Input Handler.swift */,
 				DD53137320337D1A00685013 /* Library.swift */,
-				DD53137520337D2900685013 /* Game.swift */,
+				DDEF042620487CC10005099F /* Tasks.swift */,
 			);
 			path = taskmanager;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD53137020337CEE00685013 /* Main Menu.swift in Sources */,
-				DD53137620337D2900685013 /* Game.swift in Sources */,
 				DD53137420337D1A00685013 /* Library.swift in Sources */,
 				DD5313562033763000685013 /* main.swift in Sources */,
+				DDEF042720487CC10005099F /* Tasks.swift in Sources */,
 				DD53137220337D0800685013 /* Input Handler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
